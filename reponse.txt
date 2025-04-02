@@ -20,4 +20,49 @@
 
 - git log : cette commande affiche l'historique des commits d'un dépôt avec leurs identifiants, les auteurs et les dates
 
+8) git status
+Sur la branche develop
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+	nouveau fichier : brouillon.txt
+	nouveau fichier : fichier1.txt
+
+9) git reset ici permet d'annuler l'ajout du fichier brouillon.txt dans le staging area et donc de le renvoyer vers le Working Directory.
+
+10) Pour vérifier que le fichier brouillon.txt a pas été ajouté au staging area il faut utiliser la commande git status. Si brouillon.txt n’a pas été ajouté, le terminal indiquera qu’il s’agit d’un fichier non suivi. Après avoir commit fichier1.txt, on nous affiche toujours brouillon.txt comme un fichier non suivi ce qui confirme qu’il a pas été inclu dans le commit.
+
+11) J'ai vérifié avec un git status, git log et git diff et tout semble correct
+
+12) J'ai utilisé la commande git log origin/develop
+
+13) j'ai utilisé la commande git clone https://github.com/PaulineLam24/TP-Git.git
+
+14) ls
+brouillon.txt  fichier1.txt  README.md	reponse.txt  TP-Git
+
+Ensuite pour voir les commit du TP-Git  :
+cd TP-Git
+git log : git log
+- Initial commit
+- Ajout dans README.md
+- Correctif README.md
+
+
+15) -Entre 9b68(Initial commit) et f7a7 (Ajout dans README.md)
+    Ajout d'une deuxième ligne dans README.md contenant :
+    # Ceci est un fichier README.md...
+    Commande utilisée :
+    git diff 9b68 f7a7
+    
+    -Entre f7a7 (Ajout dans README.md) et f8138d70 (Correctif README.md)
+    Correction de la mise en forme de la deuxième ligne du README.md pour qu'elle s'affiche comme du    		texte et non comme un titre.
+    Commande utilisée :
+    git diff f7a7 f813
+    
+    -Entre 9b68 (Initial commit) et f813 (Correctif README.md)
+    Ajout du texte Ceci est un fichier README.md... dans le README.md, avec correction de mise en 	forme.
+    Commande utilisée :
+    git diff 9b68 f813
+
+
 
