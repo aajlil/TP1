@@ -1,0 +1,23 @@
+# TP1 Git - Ajlil_Ayman
+
+1) La commande nous informe du statut actuel de la branche. Par exemple dans mon cas un fichier README.md a été créé dans le working directory et n'est pas encore suivi
+
+2) Cette fois ci on nous indique que le fichier README.MD a bien été ajouté et validé dans le staging area
+
+3) Ils sont tous partis dans le staging area et ne sont plus dans le working directory
+
+4) git commit -m "Ajout des fichiers README.md et reponse.txt"
+
+5) J'ai utilisé la commande git log
+
+6) git diff permet d'afficher les différences entre le working directory et le staging area alors que git diff --staged affiche les différences entre la staging area et le dernier commit
+
+7) - git show : cette commande affiche des informations détaillées sur un commit spécifique
+
+- git status : cette commande affiche l'état actuel du dépôt, en montrant les fichiers modifiés, ajoutés mais non commités, et ceux qui ne sont pas suivis par Git
+
+- git diff : cette commande affiche les différences entre les modifications non indexées et la dernière version indexée d'un fichier ou d'un ensemble de fichiers
+
+- git log : cette commande affiche l'historique des commits d'un dépôt avec leurs identifiants, les auteurs et les dates
+
+
